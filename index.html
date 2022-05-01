@@ -73,6 +73,8 @@
     <script type="text/javascript">
 
       vkBridge.send('VKWebAppInit');
+      vkBridge.send('VKWebAppShowNativeAds',{ad_format:"interstitial"}).then(data => {
+        console.log(data);});
 
 
       function showFullscrenAd(){
